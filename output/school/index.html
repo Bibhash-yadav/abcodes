@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/image/fevicon.png">
+    <script src="https://kit.fontawesome.com/e4c8e2ee92.js" crossorigin="anonymous"></script>
+    <title>YSSS</title>
+   <link rel="stylesheet" href="style.css">
+    <script src="java.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("yjhtTmQ5Z8vrgYow3");
+   })();
+</script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="/image/fevicon.png" alt="logo">
+        </div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="#home" class="active"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href="#teacher"><i class="fa-solid fa-chalkboard-user"></i>Teacher</a></li>
+                <li><a href="#gallery"><i class="fa-brands fa-envira"></i>gallery</a></li>
+                <li><a href="#form">Form</a></li>
+                <li><a href="#creator"><i class="fa-solid fa-ghost"></i>Creator</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="background" id="home">
+
+        <div class="welcome">
+            <h1>Welcome to our School..</h1>
+        </div>
+        <div class="schoolname">
+            <div class="name">
+                Shree Yagyavalkya Sanskrit Secondary School Gyankoop Janakpurdham-8 Nepal
+            </div>
+        </div>
+    </div>
+    <div class="mainteacher" id="teacher">
+        Main teachers
+    </div>
+    <div class="teacher">
+        <div class="headsir">
+            <img src="/image/headsir.jpg" alt="headsir">
+            <div class="nameofsir">Head sir</div>
+        </div>
+
+        <div class="committee-chairman">
+            <img src="" alt="committee-chairman">
+            <div class="nameofsir">Committee Chairman</div>
+        </div>
+        <div class="information-officer">
+            <img src="/image/bharatsir.jpg" alt="information-officer">
+            <div class="nameofsir">Informaton officer</div>
+        </div>
+    </div>
+    <div class="gallery" id="gallery">gallery of School</div>
+    <div class="colorgallery">
+        <div class="divid">
+            <div class="image1">
+                <img src="/image/headsir.jpg" alt="gallery-of-school">
+                <div class="nameofgallery">Head sir</div>
+            </div>
+            <div class="image2">
+                <img src="/image/office.jpg" alt="gallery-of-school">
+                <div class="nameofgallery">Office</div>
+            </div>
+            <div class="image3">
+                <img src="/image/general.jpg" alt="gallery-of-school">
+                <div class="nameofgallery">General-class</div>
+            </div>
+        </div>
+        <div class="divid2">
+            <div class="image4">
+                <img src="/image/general2.jpg" alt="gallery-of-school">
+                <div class="nameofgallery">General-class</div>
+            </div>
+            <div class="image5">
+                <img src="/image/saraswati.jpg" alt="gallery-of-school">
+                <div class="nameofgallery">Temple</div>
+            </div>
+            <div class="image6">
+                <img src="/image/sanskritstudent.jpg" alt="gallery-of-school">
+                <div class="nameofgallery">Sanskrit-student</div>
+            </div>
+        </div>
+        <div class="divid3">
+            <div class="image7">
+                <img src="/image/computer.jpg" alt="gallery-of-school">
+                <div class="nameofgallery">Computer lab</div>
+            </div>
+            <div class="image8">
+                <img src="/image/bus.jpg" alt="gallery-of-school">
+                <div class="nameofgallery">School bus</div>
+            </div>
+            <div class="image9">
+                <img src="/image/chem.jpg" alt="gallery-of-school">
+                <div class="nameofgallery">Chemistry-lab</div>
+            </div>
+        </div>
+        <div class="divid4">
+            <div class="image10">
+                <img src="/image/ch.jpg" alt="gallery-of-school">
+                <div class="nameofgallery">Chemistry-lab</div>
+            </div>
+            <div class="image11">
+                <img src="/image/chem2.jpg" alt="gallery-of-school">
+                <div class="nameofgallery">Chemistry-lab</div>
+            </div>
+            <div class="image12">
+                <img src="/image/phy.jpg" alt="gallery-of-school">
+                <div class="nameofgallery">Physics-lab</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="Form2" id="form"> Form </div>
+
+    <div class="form">
+        <form action="https://formspree.io/f/moqbyrga" method="post">
+            <div class="submit"> Please full fill the form! </div>
+            <label>Name of student</label>
+            <input type="text" id="name" name="name"  required>
+            <label>Date of Birth(DOB)</label>
+            <input type="date" id="DOB" name="DOB" required>
+            <label>Nationality</label>
+            <input type="text" id="Nationality" name="Nationality" required>
+            <label>Age</label>
+            <input type="number" id="age" name="age" required>
+            <label>Religion</label>
+            <input type="text" id="religion" name="religion" required>
+            <label>Gender</label>
+            <select name="Gender" id="Gender" required>
+                <optgroup>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other...</option>
+                </optgroup>
+            </select>
+            <label>Mother Tongue</label>
+            <input type="text" id="Mother-tongue" name="Mother-tongue" required>
+            <label>Father Name</label>
+            <input type="text" id="Father-name" name="Father-name" required>
+            <label>Mother Name</label>
+            <input type="text" id="Mother-name" name="Mother-name" required>
+            <label>VDC/Municipality</label>
+            <input type="text" id="VDC/Municipality" name="VDC/Municipality" required>
+            <label>Ward No:</label>
+            <input type="number" id="ward" name="ward" required>
+            <label>District</label>
+            <input type="text" id="District" name="District" required>
+            <label>Province</label>
+            <select name="Province" id="Province" required>
+                <optgroup>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                </optgroup>
+            </select>
+            <label>Mobile number</label>
+            <input type="number" id="Mobile-no" name="Mobile-no" required>
+            <label>Pass class</label>
+            <input type="number" id="pass-class" name="pass-class" required>
+            <label> passed year</label>
+            <input type="date" id="passed-year" name="passed-year" required>
+            <label>Name of School Where you pass</label>
+            <input type="text" id="Name-of-school-where-pass" name="Name-of-school-where-pass" required>
+            <label>Email</label>
+            <input type="email" id="email" name="email" required>
+            <label>Photo of Marksheet passed class</label>
+            <input type="file" src="" id="img" name="img" accept="image/*" required>
+            <label>Hostel</label>
+            <select name="Hostel" id="Hostel" required>
+                <optgroup>
+                    <option value="yes">Yes</option>
+                    <option value="No">No</option>
+                </optgroup>
+            </select>
+
+            <button>Submit</button>
+            <button type="Reset">Reset the form.</button>
+        </form>
+    </div>
+
+
+    <div class="about" id="creator">
+        <div class="aboutphoto">
+            <img src="/image/bibhash.jpg" alt="Creator pic">
+        </div>
+        <div class="aboutdetail">
+            <div class="serve">Creator</div>
+            Hello my name is Bibhash yadav. I am from Janakpurdham Nepal. I read in class 11 (I am a Technical
+            Students).
+            This is my third website on google. Thanks for watching this website. I just try my website on google. My
+            facebook and instagram link is given below.
+            If you want to chat with me than follow the link given below.<br>
+            Thank you!<br>
+            <a href="https://www.facebook.com/profile.php?id=100057226334759" class="fa fa-facebook"></a>
+            <a href="https://wa.me/9808134062" class="fa fa-whatsapp"></a>
+            <a href="https://www.instagram.com/bibhash_yadav_a/?fbclid=IwAR3Iva4TjiH61LTZbddjktnk2zhN1rq1bPbr3QfXgwfeDDNm5jQIEkQvROw"
+                class="fa fa-instagram"></a>
+            <a href="https://github.com/Bibhash-yadav" class="fa fa-github"></a>
+            
+        </div>
+    </div>
+
+
+
+<footer>
+    <h3 class="thanks">
+        Thanks for watching
+    </h3>
+    <div class="navbar-foot">
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#teacher">Teacher</a></li>
+            <li><a href="#gallery">gallery</a></li>
+            <li><a href="#form">Form</a></li>
+            <li><a href="#creator">Creator</a></li>
+        </ul>
+    </div>
+   
+  <div class="usermessage">
+    <h2 class="mistake">
+        if there is any mistake then please say me 
+    </h2>
+    <form action="https://formspree.io/f/moqbyrga" method="post">
+    <input type="text" placeholder="message for creator" id="usermessage" name="usermessage">
+    <button type="submit">submit</button>
+</form>
+</div>
+</footer>
+
+
+
+
+
+
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function () {
+            navBar = document.querySelector(".navbar");
+            navBar.classList.toggle("active");
+            hamburger.classList.toggle("active");
+        }
+    </script>
+
+
+</body>
+
+</html>

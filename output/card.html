@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <title>Card</title>
+</head>
+<style>
+    body{
+        min-height: 100h;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: white;
+    }
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: white;
+    padding: 3px;
+}
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid blue;
+}
+
+</style>
+<body>
+<div class="slide-container">
+    <div class="slide-content">
+        <div class="card-wrapper">
+            <div class="card">
+                <div class="image-content">
+                    <span class="overlay"></span>
+
+                    <div class="card-image">
+                        <img src="images/subhash.jpg" alt="" class="card-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

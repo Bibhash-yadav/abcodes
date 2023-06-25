@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Column</title>
+</head>
+<style>
+    .containeer{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .first, .second, .third{
+        width: 30%;
+        border: 2px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 400px;
+        margin: 5px;
+    }
+    @media only screen and (max-width:800px){
+        .containeer{
+          display: flex;
+          flex-direction: column;
+        }
+        .first, .second, .third{
+            width: 100%;
+            margin-bottom: 5px;
+        }
+    }
+</style>
+<body>
+    <div class="containeer">
+        <div class="first">
+            <p>
+                hello this is first column.
+            </p>
+        </div>
+        <div class="second">
+            <p>
+                hello this is second column.
+            </p>
+        </div>
+        <div class="third">
+            <p>
+                hello this is third column.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

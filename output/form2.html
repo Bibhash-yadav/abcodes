@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+
+.Form2 {
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: black;
+    color: white;
+}
+
+.form {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    background: rgb(247,1,11);
+    background: linear-gradient(90deg, rgba(247,1,11,1) 0%, rgba(245,6,63,1) 35%, rgba(255,0,241,1) 100%);
+}
+
+label {
+    justify-content: center;
+    width: 100%;
+    display: flex;
+}
+
+input {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+
+}
+
+select {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid red;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+button {
+    border: 2px solid;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+
+.submit {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    text-decoration-line: underline;
+    text-decoration-color: black;
+    text-decoration-thickness: 3px;
+}
+
+</style>
+<body>
+    <div class="Form2" id="form"> Form </div>
+
+    <div class="form">
+        <form action="" method="post">
+            <div class="submit"> Please full fill the form! </div>
+            <label>Name of student</label>
+            <input type="text" id="name" name="name"  required>
+            <label>Date of Birth(DOB)</label>
+            <input type="date" id="DOB" name="DOB" required>
+            <label>Nationality</label>
+            <input type="text" id="Nationality" name="Nationality" required>
+            <label>Age</label>
+            <input type="number" id="age" name="age" required>
+            <label>Religion</label>
+            <input type="text" id="religion" name="religion" required>
+            <label>Gender</label>
+            <select name="Gender" id="Gender" required>
+                <optgroup>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other...</option>
+                </optgroup>
+            </select>
+            <label>Mother Tongue</label>
+            <input type="text" id="Mother-tongue" name="Mother-tongue" required>
+            <label>Father Name</label>
+            <input type="text" id="Father-name" name="Father-name" required>
+            <label>Mother Name</label>
+            <input type="text" id="Mother-name" name="Mother-name" required>
+            <label>VDC/Municipality</label>
+            <input type="text" id="VDC/Municipality" name="VDC/Municipality" required>
+            <label>Ward No:</label>
+            <input type="number" id="ward" name="ward" required>
+            <label>District</label>
+            <input type="text" id="District" name="District" required>
+            <label>Province</label>
+            <select name="Province" id="Province" required>
+                <optgroup>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                </optgroup>
+            </select>
+            <label>Mobile number</label>
+            <input type="number" id="Mobile-no" name="Mobile-no" required>
+            <label>Pass class</label>
+            <input type="number" id="pass-class" name="pass-class" required>
+            <label> passed year</label>
+            <input type="date" id="passed-year" name="passed-year" required>
+            <label>Name of School Where you pass</label>
+            <input type="text" id="Name-of-school-where-pass" name="Name-of-school-where-pass" required>
+            <label>Email</label>
+            <input type="email" id="email" name="email" required>
+            <label>Photo of Marksheet passed class</label>
+            <input type="file" src="" id="img" name="img" accept="image/*" required>
+            <label>Hostel</label>
+            <select name="Hostel" id="Hostel" required>
+                <optgroup>
+                    <option value="yes">Yes</option>
+                    <option value="No">No</option>
+                </optgroup>
+            </select>
+
+            <button>Submit</button>
+            <button type="Reset">Reset the form.</button>
+        </form>
+    </div>
+
+</body>
+</html>
