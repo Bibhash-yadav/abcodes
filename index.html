@@ -1,3 +1,2848 @@
-<h1>Mera naam hai Joker</h1>
+<!DOCTYPE html>
+<html lang="en">
 
-<h> Hann honn.. kya karlega be</h>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project AB</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+    <div class="abcodes">
+        <div class="welcome">
+            welcome to abcodes
+        </div>
+        <div class="hamburger">
+            <div class="line"> </div>
+            <div class="line"> </div>
+            <div class="line"> </div>
+        </div>
+    </div>
+
+
+    <div class="tab">
+        <button class="tablinks" onclick="opencode(event, 'Header')" id="defaultOpen">Header</button>
+        <button class="tablinks" onclick="opencode(event, 'Body')">Body</button>
+        <button class="tablinks" onclick="opencode(event, 'about')">About</button>
+        <button class="tablinks" onclick="opencode(event, 'Card')">Card</button>
+        <button class="tablinks" onclick="opencode(event, 'details')">Details</button>
+        <button class="tablinks" onclick="opencode(event, 'column')">column</button>
+        <button class="tablinks" onclick="opencode(event, 'form')">Form</button>
+        <button class="tablinks" onclick="opencode(event, 'footer')">Footer</button>
+        <div class="project">Project works</div>
+        <button class="tablinks" onclick="opencode(event, 'School')">School</button>
+        <button class="tablinks" onclick="opencode(event, 'lumbani')">Lumbani</button>
+        <button class="tablinks" onclick="opencode(event, 'editor')">Live code editor</button>
+        <button class="tablinks" onclick="opencode(event, '')"></button>
+        <div class="project">Project works</div>
+        <button class="tablinks" onclick="opencode(event, 'School')">School</button>
+        <button class="tablinks" onclick="opencode(event, 'lumbani')">Lumbani</button>
+        <button class="tablinks" onclick="opencode(event, 'editor')">Live code editor</button>
+        <button class="tablinks" onclick="opencode(event, '')"></button>
+    </div>
+    <div id="Header" class="tabcontent">
+        <div class="output">
+            <h3>Header</h3>
+            <button> <a href="/output/navbar.html"> Output</a></button>
+        </div>
+        <code>
+                <pre>
+                <div class="name">HTML CODE</div>
+            <div class="coding">
+&lt;html&gt;
+ &lt;head&gt;
+ &lt;title&gt;Navbar&lt;/title&gt;
+ &lt;/head&gt;
+ &lt;body&gt;
+    &lt;header&gt;
+    &lt;div class="hamburger"&gt;
+    &lt;div class="line"&gt; &lt;/div&gt;
+    &lt;div class="line"&gt; &lt;/div&gt;
+    &lt;div class="line"&gt; &lt;/div&gt;
+    &lt;/div&gt;
+ &lt;div class="nav-list"&gt;
+    &lt;ul&gt;
+     &lt;li&gt; &lt;a href="#" class="active"&gt;Home &lt;/a&gt; &lt;/li&gt;
+     &lt;li&gt; &lt;a href="#"&gt;about &lt;/a&gt; &lt;/li&gt;
+     &lt;li&gt; &lt;a href="#"&gt;services &lt;/a&gt; &lt;/li&gt;
+     &lt;li&gt; &lt;a href="#"&gt;Form &lt;/a &gt;&lt;/li&gt;
+    &lt;/ul&gt;
+ &lt;/div&gt;
+ &lt;div class="logo"&gt;
+  Logo
+ &lt;/div&gt;
+ &lt;/header&gt;
+ &lt;/body&gt;
+&lt;/html&gt;
+</div>
+    <div class="name">CSS CODE</div>
+    <div class="coding">
+ &lt;style&gt;
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding-right: 20px;
+}
+.hamburger{
+    display: none;
+}
+.nav-list ul{
+    display: flex;
+    list-style-type: none;
+}
+.nav-list ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+.nav-list ul li a.active{
+    background-color: white;
+    color: black;
+}
+.nav-list ul li a:hover{
+    background-color: white;
+    color: black;
+}
+@media only screen and (max-width:592px){
+
+ .hamburger{
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+}
+.hamburger .line{
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+}
+.hamburger.active .line:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active .line:nth-child(1) {
+    transform: translateY(15px) rotate(55deg);
+    height: 2px;
+    }                 
+.hamburger.active .line:nth-child(3) {
+    transform: translateY(-4px) rotate(-55deg);
+    height: 2px;
+}
+.nav-list{
+    height: 0;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background-color: black;
+    transition: 0.2s;
+    overflow: hidden;
+}
+.nav-list.active{
+    height: 400px;
+}
+.nav-list ul{
+    display: block;
+    width: fit-content;
+    margin: 80px auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+}
+.nav-list ul{
+    opacity: 1;
+}
+.nav-list ul li a{
+    margin-bottom: 10px;
+}
+}
+ &lt;/style&gt;
+</div>
+<div class="name">JAVASCRIPT CODE</div>
+ <div class="coding">
+&lt;script&gt; 
+    hamburger = document.querySelector(".hamburger"); 
+    hamburger.onclick=function(){ 
+        navbar = document.querySelector(".nav-list"); 
+        navbar.classList.toggle("active"); 
+        hamburger.classList.toggle("active");
+    }
+&lt;/script&gt;
+</div>
+            </pre>
+        </code>
+        <div class="output">
+            <h3>Header</h3>
+            <h4>Another design </h4>
+            <button> <a href="/output/navbar2.html"> Output</a></button>
+        </div>
+        <code>
+            <pre>
+<div class="name">HTML CODE</div>
+<div class="coding">
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Navbar&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+     &lt;header&gt;
+        &lt;div class="logo"&gt;
+            Logo
+        &lt;/div&gt;
+        &lt;div class="hamburger"&gt;
+            &lt;div class="line"&gt; &lt;/div&gt;
+            &lt;div class="line"&gt; &lt;/div&gt;
+            &lt;div class="line"&gt; &lt;/div&gt;
+        &lt;/div>
+        &lt;div class="nav-list"&gt;
+            &lt;ul &gt;
+             &lt;li&gt; &lt;a href="#" class="active"&gt;Home &lt;/a&gt; &lt;/li&gt;
+             &lt;li&gt; &lt;a href="#"&gt;about &lt;/a&gt; &lt;/li&gt;
+             &lt;li&gt; &lt;a href="#"&gt;services &lt;/a&gt; &lt;/li&gt;
+             &lt;li&gt; &lt;a href="#"&gt;Form &lt;/a &gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/header&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</div>
+<div class="name">CSS CODE</div>
+<div class="coding">
+ &lt;style&gt;
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+.hamburger{
+    display: none;
+}
+.nav-list ul{
+    display: flex;
+    list-style-type: none;
+}
+.nav-list ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+.nav-list ul li a.active{
+    background-color: white;
+    color: black;
+}
+.nav-list ul li a:hover{
+    background-color: white;
+    color: black;
+}
+@media only screen and (max-width:592px){
+
+.hamburger{
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+}
+.hamburger .line{
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+}
+.hamburger.active .line:nth-child(2) {
+    opacity: 0;
+}
+                
+.hamburger.active .line:nth-child(1) {
+    transform: translateY(15px) rotate(55deg);
+    height: 2px;
+}
+                
+.hamburger.active .line:nth-child(3) {
+    transform: translateY(-4px) rotate(-55deg);
+    height: 2px;
+}
+.nav-list{
+    height: 0;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background-color: black;
+    transition: 0.2s;
+    overflow: hidden;
+}
+.nav-list.active{
+    height: 400px;
+}
+.nav-list ul{
+    display: block;
+    width: fit-content;
+    margin: 80px auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+}
+.nav-list ul{
+    opacity: 1;
+}
+.nav-list ul li a{
+    margin-bottom: 10px;
+}
+}
+            &lt;/style&gt;
+            </div>
+            <div class="name">JAVASCRIPT CODE</div>
+            <div class="coding">
+&lt;script&gt; 
+    hamburger = document.querySelector(".hamburger"); 
+    hamburger.onclick=function(){ 
+        navbar = document.querySelector(".nav-list"); 
+        navbar.classList.toggle("active"); 
+        hamburger.classList.toggle("active");
+    }
+&lt;/script&gt;
+</div>
+        </pre>
+    </code>
+
+    </div>
+
+    <div id="Body" class="tabcontent">
+        <div class="output">
+            <h3>Body</h3>
+            <button> <a href="/output/body.html"> Output</a></button>
+        </div>
+        <code>
+                <pre>  
+<div class="name">Html code</div>
+ <div class="coding">
+    &lt;html&gt;
+    &lt;head&gt;
+    &lt;title&gt;BODY&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;div class="body"&gt;
+    &lt;div class="big-font"&gt;
+            hello
+    &lt;/div&gt;
+
+    &lt;div class="small-font"&gt;
+         my name is Bibhash yadav
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+</div>
+    <div class="name">CSS code</div>
+    <div class="coding">
+&lt;style&gt;
+    .body{
+    width: 100%;
+    height: 500px;
+    background-color: rgba(4, 4, 4, 0.226);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: ubuntu;
+    }
+    .big-font{
+    font-size: 40px;
+    padding-bottom: 20px;
+    }
+    .small-font{
+    font-size: 20px;
+    }
+ &lt;/style&gt;
+            </div>
+        </pre>
+    </code>
+    </div>
+
+    <div id="about" class="tabcontent">
+        <div class="output">
+            <h3>About</h3>
+            <button> <a href="/output/about.html"> Output</a></button>
+        </div>
+        <code>
+            <pre>
+ <div class="name">HTML code</div>
+<div class="coding">
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;About&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="about"&gt;
+        &lt;div class="text"&gt;
+            Hello, My name is Bibhash yadav. I am creating this website for a website developer.
+        &lt;/div&gt;
+        &lt;div class="image"&gt;
+            &lt;img src="images/bibhash.jpg" alt="image"&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</div>
+<div class="name">CSS code</div>
+<div class="coding">
+&lt;style&gt;
+.about{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+.text{
+    width: 50%;
+    padding: 20px;
+    font-size: 20px;
+}
+.image{
+    width: 50%;
+}
+.image img{
+    width: 40%;
+    padding: 20px;
+    border-radius: 50px;
+}
+&lt;/style&gt;
+</div>
+</pre>
+</code>
+    </div>
+
+    <div id="Card" class="tabcontent">
+        <div class="output">
+            <h3>Card</h3>
+            <button> <a href="/output/card/index.html"> Output</a></button>
+        </div>
+        <code>
+            <pre>
+                <div class="name">Html code</div>
+                <div class="coding">
+  &lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Infinite Card Slider JavaScript&lt;/title&gt;
+    &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class="wrapper"&gt;
+      &lt;i id="left" class="fa-solid fa-angle-left"&gt;&lt;/i&gt;
+      &lt;ul class="carousel"&gt;
+        &lt;li class="card"&gt;
+          &lt;div class="img"&gt;&lt;img src="images/bibhash.jpg" alt="img" draggable="false"&gt; &lt;/div &gt;
+          &lt;h2&gt;Bibhash yadav&lt ;/h2 &gt; 
+          &lt;span&gt;Web Developer&lt; /span &gt;
+        &lt;/li &gt;
+        &lt;li class="card"&gt;
+          &lt;div class="img"&gt;&lt;img src="images/subhash.jpg" alt="img" draggable="false">&lt;/div&gt;
+          &lt;h2&gt;Subhash yadav&lt;/h2&gt;
+          &lt;span&gt;Brother&lt;/span&gt;
+        &lt;/li&gt;
+        &lt;li class="card"&gt;
+          &lt;div class="img">&lt;img src="images/rahul.jpg" alt="img" draggable="false"&gt;&lt;/div&gt;
+          &lt;h2&gt; Rahul kumar yadav&lt;/h2&gt;
+          &lt;span&gt;Friends&lt;/span&gt;
+        &lt;/li&gt;
+        &lt;li class="card"&gt;
+          &lt;div class="img">&lt;img src="images/manish.jpg" alt="img" draggable="false"&gt;&lt;/div&gt;
+          &lt;h27gt;Manish yadav&lt;/h2&gt;
+          &lt;span&gt;Friends&lt;/span&gt;
+        &lt;/li&gt;
+        &lt;li class="card"&gt;
+          &lt;div class="img"&gt;&lt;img src="images/amresh.jpg" alt="img" draggable="false"&gt;&lt;/div&gt;
+          &lt;h2>Amresh yadav&lt;/h2&gt;
+          &lt;span>Friends&lt;/span&gt;
+        &lt;/li&gt;
+        &lt;li class="card"&gt;
+          &lt;div class="img">&lt;img src="images/gobin.jpg" alt="img" draggable="false"&gt;&lt;/div&gt;
+          &lt;h2&gt;Gobind yadav&lt;/h2&gt;
+          &lt;span&gt;Friends&lt;/span&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;i id="right" class="fa-solid fa-angle-right">&lt;/i&gt;
+    &lt;/div&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</div>
+<div class="name">CSS code</div>
+<div class="coding">
+     &lt;style&gt;
+        /* Import Google font - Poppins */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+     * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+     }
+      body {
+        display: flex;
+        padding: 0 35px;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background: linear-gradient(to left top, #031A9A, #8B53FF);
+      }
+    .wrapper {
+        max-width: 1100px;
+        width: 100%;
+        position: relative;
+     }
+    .wrapper i {
+        top: 50%;
+        height: 50px;
+        width: 50px;
+        cursor: pointer;
+        font-size: 1.25rem;
+        position: absolute;
+        text-align: center;
+        line-height: 50px;
+        background: #fff;
+        border-radius: 50%;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+        transform: translateY(-50%);
+        transition: transform 0.1s linear;
+   }
+    .wrapper i:active{
+        transform: translateY(-50%) scale(0.85);
+     }
+   .wrapper i:first-child{
+        left: -22px;
+    }
+    .wrapper i:last-child{
+        right: -22px;
+    }
+    .wrapper .carousel{
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: calc((100% / 3) - 12px);
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 16px;
+        border-radius: 8px;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+    }
+   .carousel::-webkit-scrollbar {
+        display: none;
+    }
+        .carousel.no-transition {
+        scroll-behavior: auto;
+    }
+    .carousel.dragging {
+        scroll-snap-type: none;
+        scroll-behavior: auto;
+    }
+    .carousel.dragging .card {
+        cursor: grab;
+        user-select: none;
+    }
+    .carousel :where(.card, .img) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .carousel .card {
+        scroll-snap-align: start;
+        height: 342px;
+        list-style: none;
+        background: #fff;
+        cursor: pointer;
+        padding-bottom: 15px;
+        flex-direction: column;
+        border-radius: 8px;
+    }
+    .carousel .card .img {
+        background: #8B53FF;
+        height: 148px;
+        width: 148px;
+        border-radius: 50%;
+    }
+    .card .img img {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #fff;
+    }
+    .carousel .card h2 {
+        font-weight: 500;
+        font-size: 1.56rem;
+        margin: 30px 0 5px;
+    }
+    .carousel .card span {
+        color: #6A6D78;
+        font-size: 1.31rem;
+    }
+
+    @media screen and (max-width: 900px) {
+    
+        .wrapper .carousel {
+        grid-auto-columns: calc((100% / 2) - 9px);
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .wrapper .carousel {
+            grid-auto-columns: 100%;
+        }
+    }
+    &lt;/style&gt;
+</div>
+    <div class="name">JavaScript code</div>
+    <div class="coding">
+        &lt;script&gt;
+            const wrapper = document.querySelector(".wrapper");
+const carousel = document.querySelector(".carousel");
+const firstCardWidth = carousel.querySelector(".card").offsetWidth;
+const arrowBtns = document.querySelectorAll(".wrapper i");
+const carouselChildrens = [...carousel.children];
+
+let isDragging = false, isAutoPlay = true, startX, startScrollLeft, timeoutId;
+
+// Get the number of cards that can fit in the carousel at once
+let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
+
+// Insert copies of the last few cards to beginning of carousel for infinite scrolling
+carouselChildrens.slice(-cardPerView).reverse().forEach(card => {
+    carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
+});
+
+// Insert copies of the first few cards to end of carousel for infinite scrolling
+carouselChildrens.slice(0, cardPerView).forEach(card => {
+    carousel.insertAdjacentHTML("beforeend", card.outerHTML);
+});
+
+// Scroll the carousel at appropriate postition to hide first few duplicate cards on Firefox
+carousel.classList.add("no-transition");
+carousel.scrollLeft = carousel.offsetWidth;
+carousel.classList.remove("no-transition");
+
+// Add event listeners for the arrow buttons to scroll the carousel left and right
+arrowBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+        carousel.scrollLeft += btn.id == "left" ? -firstCardWidth : firstCardWidth;
+    });
+});
+
+const dragStart = (e) => {
+    isDragging = true;
+    carousel.classList.add("dragging");
+    // Records the initial cursor and scroll position of the carousel
+    startX = e.pageX;
+    startScrollLeft = carousel.scrollLeft;
+}
+
+const dragging = (e) => {
+    if(!isDragging) return; // if isDragging is false return from here
+    // Updates the scroll position of the carousel based on the cursor movement
+    carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
+}
+
+const dragStop = () => {
+    isDragging = false;
+    carousel.classList.remove("dragging");
+}
+
+const infiniteScroll = () => {
+    // If the carousel is at the beginning, scroll to the end
+    if(carousel.scrollLeft === 0) {
+        carousel.classList.add("no-transition");
+        carousel.scrollLeft = carousel.scrollWidth - (2 * carousel.offsetWidth);
+        carousel.classList.remove("no-transition");
+    }
+    // If the carousel is at the end, scroll to the beginning
+    else if(Math.ceil(carousel.scrollLeft) === carousel.scrollWidth - carousel.offsetWidth) {
+        carousel.classList.add("no-transition");
+        carousel.scrollLeft = carousel.offsetWidth;
+        carousel.classList.remove("no-transition");
+    }
+
+    // Clear existing timeout & start autoplay if mouse is not hovering over carousel
+    clearTimeout(timeoutId);
+    if(!wrapper.matches(":hover")) autoPlay();
+}
+
+const autoPlay = () => {
+    if(window.innerWidth < 800 || !isAutoPlay) return; // Return if window is smaller than 800 or isAutoPlay is false
+    // Autoplay the carousel after every 2500 ms
+    timeoutId = setTimeout(() => carousel.scrollLeft += firstCardWidth, 2500);
+}
+autoPlay();
+
+carousel.addEventListener("mousedown", dragStart);
+carousel.addEventListener("mousemove", dragging);
+document.addEventListener("mouseup", dragStop);
+carousel.addEventListener("scroll", infiniteScroll);
+wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
+wrapper.addEventListener("mouseleave", autoPlay);
+        &lt;/script&gt;
+</div>
+            </pre>
+        </code>
+
+    </div>
+    <div id="details" class="tabcontent">
+        <div class="output">
+            <h3>Details</h3>
+            <button> <a href="/output/details.html"> Output</a></button>
+        </div>
+        <code>
+            <pre>
+                <div class="name">Html code</div>
+                <div class="coding">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Details&lt;/title&gt;
+&lt;/head&gt;                
+&lt;body&gt;
+    &lt;div class="text"&gt;
+        &lt;div class="big-text"&gt;
+            Nepal
+        &lt;/div&gt;
+        &lt;div class="small-text"&gt;
+            Nepal is a landlocked country with highly diverse and rich geography, culture, and religions. It is situated in South Asia on the lap of the hug Himalayas surrounded by India in the east, south, and west and China in the north. It occupies an area of 147,516 sq. km. with an average of 193km wide from North to South and an average length (East to West) is 885km. It provides a variety of geographical structures owning a large number of natural gifts.&lt;br&gt;
+            &lt;br&gt;
+            Geographically, Nepal is divided into three regions. The mountain regions, Hilly and Terai regions occupy about 15%, 68%, and 17% of the total area of Nepal respectively. Nepal owns many snow-capped lofty mountains. The highest peak in the world, Mt.Everest attracts thousands of tourists every year. For administrative purposes, Nepal has been divided into seven provinces and the provinces are divided into 77 districts. the districts are further divided into municipalities and rural municipalities.&lt;br&gt;
+            &lt;br&gt;
+            The magnificent mountains in the north, undulating slopes, passes, swift-flowing crystal-like rivers, lakes, valleys, tars, etc are attractive things that identify Nepal as a piece of heaven,. It has been a major choice of a large number of foreign tourists for the last few decades. The world highest mountain Mt. Everest, called the roof of the world identifies Nepal throughout the world. It also posses a lake at the highest altitude, the deepest gorge, and so on.&lt;br&gt;
+            &lt;br&gt;
+            We are renowned around the globe with not only our natural heritage but also with cultural heritages too. The major heritages that are listed in the World Heritage List such as Lumbini, Chitwan National Park, Sagarmatha National Park and many more introduce us as prosperous people of small heaven. Moreover, one can see a number of temples and Kathmandu as the city of temples.&lt;br&gt;
+            &lt;br&gt;
+            It is the land that gave birth to world famous persons. Gautam Buddha, the preacher of peace and founder of Buddhism, Prithivi Narayan Shah, the builder of modern unified Nepal. Tenzing Norgay Sherpa, the first human to reach the summit of Mt. Everest with Hilary, etc. were those who possessed to Nepal. Not only them, but brave soldiers such as Bal Bhadra Kunwar, Amar Singh Thapa, Bhimsen Thapa, and others, had demonstrated extraordinary bravery in preventing the British empire from colonizing Nepal.&lt;br&gt;
+            &lt;br&gt;
+            Though Nepal is a multi-lingual, multi-cultural, multi-ethnic, multi-religious country, there has not been any conflict between any group in the name of the language, religion, or ethnicity. the unity among diversity that is prevalent in Nepal proves that Nepalese are cooperative and peace-loving. It also inspires other nations to follow its people's harmonious unity. Nepalese people respect guests as their gods since there is a popular belief that  "Atithi Debo Bhawa". It is a strong example to prove that Nepalese are spiritually rich through they are economically poor. Nepalese people love freedom and democracy. That is why they have fought several times for democracy through their leaders deceive them time and again. Recently, Nepal has been declared a republic country and promulgated a new constituent.&lt;br&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+</div>
+<div class="name">CSS code</div>
+<div class="coding">
+    &lt;style&gt;
+    .text{
+        border: 2px solid black;
+    }
+    .big-text{
+        display: flex;
+        width: 100%;
+        font-size: 30px;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 20px;
+    
+    }
+    .small-text{
+        font-size: 20px;
+    }
+&lt;/style&gt;
+</div>
+</pre>
+    </div>
+
+    <div id="column" class="tabcontent">
+        <div class="output">
+            <h3>Column</h3>
+            <button> <a href="/output/column.html"> Output</a></button>
+        </div>
+        <code>
+            <pre>
+                <div class="name">Html code</div>
+                <div class="coding">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+                    
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Column&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="containeer"&gt;
+        &lt;div class="first"&gt;
+            &lt;p&gt;
+                hello this is first column.
+            &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class="second"&gt;
+            &lt;p&gt;
+                hello this is second column.
+            &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class="third"&gt;
+            &lt;p&gt;
+                hello this is third column.
+            &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                  </div>
+                  <div class="name">CSS code</div>
+                <div class="coding">
+&lt;style&gt;
+.containeer{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.first, .second, .third{
+    width: 30%;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    margin: 5px;
+}
+@media only screen and (max-width:800px){
+    .containeer{
+      display: flex;
+      flex-direction: column;
+    }
+    .first, .second, .third{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
+&lt;/style&gt;
+                  </div>
+    </pre>
+    </code>
+    </div>
+    <div id="form" class="tabcontent">
+        <div class="output">
+            <h3>Form</h3>
+            <button> <a href="/output/form.html"> Output</a></button>
+        </div>
+        <code>
+            <pre>
+                <div class="name">Html code</div>
+                <div class="coding">
+              &lt;html&gt;
+              &lt;head&gt;
+                 &lt;title&gt;Form&lt;/title&gt;
+               &lt;/head&gt;
+                &lt;body&gt;
+                 &lt;h1&gt;Form&lt;/h1&gt;
+                 &lt;form&gt;
+                 &lt;input type="text" name="name" placeholder="Enter your name..."&gt;
+                  &lt;input type="email" name="email" placeholder="Enter your email..."&gt;
+                  &lt;textarea name="message" id="message" cols="30" rows="10" placeholder="Your message..."&gt;&lt;/textarea&gt;
+                 &lt;div class="button"&gt;
+                 &lt;button type="submit"&gt;submit&lt;/button&gt;
+                 &lt;button type="reset"&gt;Reset&lt;/button&gt;
+             &lt;/div&gt;
+             &lt;/form&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+</div>
+        <div class="name">CSS code</div>
+        <div class="coding">
+        &lt;style&gt;
+    form{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    input{
+        width: 40%;
+        margin: 10px;
+        padding: 10px;
+        border: 2px solid black;
+    }
+    textarea{
+        width: 40%;
+        margin: 10px;
+        padding: 10px;
+        border: 2px solid black;
+    }
+    button{
+        margin: 10px;
+        padding: 10px;
+        border: 2px solid black;
+        font-size: 15px;
+        border-radius: 10px;
+    }
+    h1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration-line: underline;
+    }
+    @media only screen and (max-width:600px) {
+        input{
+            width: 80%;
+        }
+        textarea{
+            width: 80%;
+        }
+    }
+&lt;/style&gt;
+</div>
+            </pre>
+        </code>
+
+        <div class="output">
+            <h3>Form</h3>
+            <h4>Another design </h4>
+            <button> <a href="/output/form2.html"> Output</a></button>
+        </div>
+        <code>
+            <pre>
+                <div class="name">Html code</div>
+                <div class="coding">
+&lt;div class="Form2" id="form"&gt; Form &lt;/div&gt;
+
+&lt;div class="form"&gt;
+    &lt;form action="" method="post"&gt;
+        &lt;div class="submit"&gt; Please full fill the form! &lt;/div&gt;
+        &lt;label&gt;Name of student&lt;/label&gt;
+        &lt;input type="text" id="name" name="name"  required&gt;
+        &lt;label&gt;Date of Birth(DOB)&lt;/label&gt;
+        &lt;input type="date" id="DOB" name="DOB" required&gt;
+        &lt;label&gt;Nationality&lt;/label&gt;
+        &lt;input type="text" id="Nationality" name="Nationality" required&gt;
+        &lt;label&gt;Age&lt;/label&gt;
+        &lt;input type="number" id="age" name="age" required&gt;
+        &lt;label&gt;Religion&lt;/label&gt;
+        &lt;input type="text" id="religion" name="religion" required&gt;
+        &lt;label&gt;Gender&lt;/label&gt;
+        &lt;select name="Gender" id="Gender" required&gt;
+            &lt;optgroup&gt;
+                &lt;option value="Male"&gt;Male&lt;/option&gt;
+                &lt;option value="Female"&gt;Female&lt;/option&gt;
+                &lt;option value="Other"&gt;Other...&lt;/option&gt;
+            &lt;/optgroup&gt;
+        &lt;/select&gt;
+        &lt;label&gt;Mother Tongue&lt;/label&gt;
+        &lt;input type="text" id="Mother-tongue" name="Mother-tongue" required&gt;
+        &lt;label&gt;Father Name&lt;/label&gt;
+        &lt;input type="text" id="Father-name" name="Father-name" required&gt;
+        &lt;label&gt;Mother Name&lt;/label&gt;
+        &lt;input type="text" id="Mother-name" name="Mother-name" required&gt;
+        &lt;label&gt;VDC/Municipality&lt;/label&gt;
+        &lt;input type="text" id="VDC/Municipality" name="VDC/Municipality" required&gt;
+        &lt;label&gt;Ward No:&lt;/label&gt;
+        &lt;input type="number" id="ward" name="ward" required&gt;
+        &lt;label&gt;District&lt;/label&gt;
+        &lt;input type="text" id="District" name="District" required&gt;
+        &lt;label&gt;Province&lt;/label&gt;
+        &lt;select name="Province" id="Province" required&gt;
+            &lt;optgroup&gt;
+                &lt;option value="1"&gt;1&lt;/option&gt;
+                &lt;option value="2"&gt;2&lt;/option&gt;
+                &lt;option value="3"&gt;3&lt;/option&gt;
+                &lt;option value="4"&gt;4&lt;/option&gt;
+                &lt;option value="5"&gt;5&lt;/option&gt;
+                &lt;option value="6"&gt;6&lt;/option&gt;
+                &lt;option value="7"&gt;7&lt;/option&gt;
+            &lt;/optgroup&gt;
+        &lt;/select&gt;
+        &lt;label&gt;Mobile number&lt;/label&gt;
+        &lt;input type="number" id="Mobile-no" name="Mobile-no" required&gt;
+        &lt;label&gt;Pass class&lt;/label&gt;
+        &lt;input type="number" id="pass-class" name="pass-class" required&gt;
+        &lt;label&gt; passed year&lt;/label&gt;
+        &lt;input type="date" id="passed-year" name="passed-year" required&gt;
+        &lt;label&gt;Name of School Where you pass&lt;/label&gt;
+        &lt;input type="text" id="Name-of-school-where-pass" name="Name-of-school-where-pass" required&gt;
+        &lt;label&gt;Email&lt;/label&gt;
+        &lt;input type="email" id="email" name="email" required&gt;
+        &lt;label&gt;Photo of Marksheet passed class&lt;/label&gt;
+        &lt;input type="file" src="" id="img" name="img" accept="image/*" required&gt;
+        &lt;label&gt;Hostel&lt;/label&gt;
+        &lt;select name="Hostel" id="Hostel" required&gt;
+            &lt;optgroup&gt;
+                &lt;option value="yes"&gt;Yes&lt;/option&gt;
+                &lt;option value="No"&gt;No&lt;/option&gt;
+            &lt;/optgroup&gt;
+        &lt;/select&gt;
+            
+        &lt;button&gt;Submit&lt;/button&gt;
+        &lt;button type="Reset"&gt;Reset the form.&lt;/button&gt;
+    &lt;/form&gt;
+&lt;/div&gt;
+</div>
+        <div class="name">CSS code</div>
+        <div class="coding">
+        &lt;style&gt;
+ 
+.Form2 {
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: black;
+    color: white;
+}
+
+.form {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    background: rgb(247,1,11);
+    background: linear-gradient(90deg, rgba(247,1,11,1) 0%, rgba(245,6,63,1) 35%, rgba(255,0,241,1) 100%);
+}
+
+label {
+    justify-content: center;
+    width: 100%;
+    display: flex;
+}
+
+input {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+
+}
+
+select {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid red;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+button {
+    border: 2px solid;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+
+.submit {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    text-decoration-line: underline;
+    text-decoration-color: black;
+    text-decoration-thickness: 3px;
+}
+
+&lt;/style&gt;
+            </div>
+        </pre>
+    </code>
+
+
+    </div>
+
+    <div id="footer" class="tabcontent">
+        <div class="output">
+            <h3>Form</h3>
+            <button> <a href="/output/footer.html"> Output</a></button>
+        </div>
+        <code>
+            <pre>
+                <div class="name">Html code</div>
+                <div class="coding">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;footer&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;footer&gt;
+    &lt;h3 class="thanks"&gt;
+        Thanks for watching
+    &lt;/h3&gt;
+    &lt;div class="navbar-foot"&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#home" class="active"&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#teacher"&gt;Teacher&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#gallery"&gt;gallery&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#form"&gt;Form&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#creator"&gt;Creator&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+   
+  &lt;div class="usermessage"&gt;
+    &lt;h2 class="mistake"&gt;
+        if there is any mistake then please say me 
+    &lt;/h2&gt;
+    &lt;form action="https://formspree.io/f/moqbyrga" method="post"&gt;
+    &lt;input type="text" placeholder="message for creator" id="usermessage" name="usermessage"&gt;
+    &lt;button type="submit"&gt;submit&lt;/button&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</div>
+<div class="name">CSS code</div>
+<div class="coding">
+&lt;style&gt;
+
+footer{
+    display: flex;
+    width: 100%;
+    background: black;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+}
+#usermessage{
+width: 60%;
+padding: 10px;
+}
+.navbar-foot ul li a{
+    display: flex;
+    color: white;
+    width: 45%;
+    padding: 2px;
+}
+.navbar-foot ul li a:hover{
+    font-size: 25px;
+    cursor: pointer;
+
+}
+.thanks{
+    width: 15%;
+}
+@media only screen and (max-width: 835px) {
+    footer{
+        width: 100%;
+        flex-direction: column;
+    }
+    .thanks{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    #usermessage{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    .navbar-foot{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+}
+
+&lt;/style&gt;
+</div>
+            </pre>
+        </code>
+    </div>
+
+    <div id="School" class="tabcontent">
+        <div class="output">
+            <h3>School</h3>
+            <button> <a href="/output/school/index.html"> Output</a></button>
+        </div>
+        <code>
+            <pre>
+                <div class="name">Html code</div>
+                <div class="coding">
+ &lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;link rel="icon" type="image/x-icon" href="/image/fevicon.png"&gt;
+    &lt;script src="https://kit.fontawesome.com/e4c8e2ee92.js" crossorigin="anonymous"&gt;&lt;/script&gt;
+    &lt;title&gt;YSSS&lt;/title&gt;
+   &lt;link rel="stylesheet" href="style.css"&gt;
+    &lt;script src="java.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"&gt;
+&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+   (function(){
+      emailjs.init("yjhtTmQ5Z8vrgYow3");
+   })();
+&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;header&gt;
+        &lt;div class="logo"&gt;
+            &lt;img src="/image/fevicon.png" alt="logo"&gt;
+        &lt;/div&gt;
+        &lt;div class="hamburger"&gt;
+            &lt;div class="line"&gt;&lt;/div&gt;
+            &lt;div class="line"&gt;&lt;/div&gt;
+            &lt;div class="line"&gt;&lt;/div&gt;
+
+        &lt;/div&gt;
+        &lt;div class="navbar"&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="#home" class="active"&gt;&lt;i class="fa-solid fa-house"&gt;&lt;/i&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#teacher"&gt;&lt;i class="fa-solid fa-chalkboard-user"&gt;&lt;/i&gt;Teacher&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#gallery"&gt;&lt;i class="fa-brands fa-envira"&gt;&lt;/i&gt;gallery&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#form"&gt;Form&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#creator"&gt;&lt;i class="fa-solid fa-ghost"&gt;&lt;/i&gt;Creator&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/header&gt;
+
+    &lt;div class="background" id="home"&gt;
+
+        &lt;div class="welcome"&gt;
+            &lt;h1&gt;Welcome to our School..&lt;/h1&gt;
+        &lt;/div&gt;
+        &lt;div class="schoolname"&gt;
+            &lt;div class="name"&gt;
+                Shree Yagyavalkya Sanskrit Secondary School Gyankoop Janakpurdham-8 Nepal
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="mainteacher" id="teacher"&gt;
+        Main teachers
+    &lt;/div&gt;
+    &lt;div class="teacher"&gt;
+        &lt;div class="headsir"&gt;
+            &lt;img src="/image/headsir.jpg" alt="headsir"&gt;
+            &lt;div class="nameofsir"&gt;Head sir&lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class="committee-chairman"&gt;
+            &lt;img src="" alt="committee-chairman"&gt;
+            &lt;div class="nameofsir"&gt;Committee Chairman&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="information-officer"&gt;
+            &lt;img src="/image/bharatsir.jpg" alt="information-officer"&gt;
+            &lt;div class="nameofsir"&gt;Informaton officer&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="gallery" id="gallery"&gt;gallery of School&lt;/div&gt;
+    &lt;div class="colorgallery"&gt;
+        &lt;div class="divid"&gt;
+            &lt;div class="image1"&gt;
+                &lt;img src="/image/headsir.jpg" alt="gallery-of-school"&gt;
+                &lt;div class="nameofgallery"&gt;Head sir&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="image2"&gt;
+                &lt;img src="/image/office.jpg" alt="gallery-of-school"&gt;
+                &lt;div class="nameofgallery"&gt;Office&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="image3"&gt;
+                &lt;img src="/image/general.jpg" alt="gallery-of-school"&gt;
+                &lt;div class="nameofgallery"&gt;General-class&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="divid2"&gt;
+            &lt;div class="image4"&gt;
+                &lt;img src="/image/general2.jpg" alt="gallery-of-school"&gt;
+                &lt;div class="nameofgallery"&gt;General-class&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="image5"&gt;
+                &lt;img src="/image/saraswati.jpg" alt="gallery-of-school"&gt;
+                &lt;div class="nameofgallery"&gt;Temple&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="image6"&gt;
+                &lt;img src="/image/sanskritstudent.jpg" alt="gallery-of-school"&gt;
+                &lt;div class="nameofgallery"&gt;Sanskrit-student&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="divid3"&gt;
+            &lt;div class="image7"&gt;
+                &lt;img src="/image/computer.jpg" alt="gallery-of-school"&gt;
+                &lt;div class="nameofgallery"&gt;Computer lab&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="image8"&gt;
+                &lt;img src="/image/bus.jpg" alt="gallery-of-school"&gt;
+                &lt;div class="nameofgallery"&gt;School bus&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="image9"&gt;
+                &lt;img src="/image/chem.jpg" alt="gallery-of-school"&gt;
+                &lt;div class="nameofgallery"&gt;Chemistry-lab&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="divid4"&gt;
+            &lt;div class="image10"&gt;
+                &lt;img src="/image/ch.jpg" alt="gallery-of-school"&gt;
+                &lt;div class="nameofgallery"&gt;Chemistry-lab&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="image11"&gt;
+                &lt;img src="/image/chem2.jpg" alt="gallery-of-school"&gt;
+                &lt;div class="nameofgallery"&gt;Chemistry-lab&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="image12"&gt;
+                &lt;img src="/image/phy.jpg" alt="gallery-of-school"&gt;
+                &lt;div class="nameofgallery"&gt;Physics-lab&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;div class="Form2" id="form"&gt; Form &lt;/div&gt;
+
+    &lt;div class="form"&gt;
+        &lt;form action="https://formspree.io/f/moqbyrga" method="post"&gt;
+            &lt;div class="submit"&gt; Please full fill the form! &lt;/div&gt;
+            &lt;label&gt;Name of student&lt;/label&gt;
+            &lt;input type="text" id="name" name="name"  required&gt;
+            &lt;label&gt;Date of Birth(DOB)&lt;/label&gt;
+            &lt;input type="date" id="DOB" name="DOB" required&gt;
+            &lt;label&gt;Nationality&lt;/label&gt;
+            &lt;input type="text" id="Nationality" name="Nationality" required&gt;
+            &lt;label&gt;Age&lt;/label&gt;
+            &lt;input type="number" id="age" name="age" required&gt;
+            &lt;label&gt;Religion&lt;/label&gt;
+            &lt;input type="text" id="religion" name="religion" required&gt;
+            &lt;label&gt;Gender&lt;/label&gt;
+            &lt;select name="Gender" id="Gender" required&gt;
+                &lt;optgroup&gt;
+                    &lt;option value="Male"&gt;Male&lt;/option&gt;
+                    &lt;option value="Female"&gt;Female&lt;/option&gt;
+                    &lt;option value="Other"&gt;Other...&lt;/option&gt;
+                &lt;/optgroup&gt;
+            &lt;/select&gt;
+            &lt;label&gt;Mother Tongue&lt;/label&gt;
+            &lt;input type="text" id="Mother-tongue" name="Mother-tongue" required&gt;
+            &lt;label&gt;Father Name&lt;/label&gt;
+            &lt;input type="text" id="Father-name" name="Father-name" required&gt;
+            &lt;label&gt;Mother Name&lt;/label&gt;
+            &lt;input type="text" id="Mother-name" name="Mother-name" required&gt;
+            &lt;label&gt;VDC/Municipality&lt;/label&gt;
+            &lt;input type="text" id="VDC/Municipality" name="VDC/Municipality" required&gt;
+            &lt;label&gt;Ward No:&lt;/label&gt;
+            &lt;input type="number" id="ward" name="ward" required&gt;
+            &lt;label&gt;District&lt;/label&gt;
+            &lt;input type="text" id="District" name="District" required&gt;
+            &lt;label&gt;Province&lt;/label&gt;
+            &lt;select name="Province" id="Province" required&gt;
+                &lt;optgroup&gt;
+                    &lt;option value="1"&gt;1&lt;/option&gt;
+                    &lt;option value="2"&gt;2&lt;/option&gt;
+                    &lt;option value="3"&gt;3&lt;/option&gt;
+                    &lt;option value="4"&gt;4&lt;/option&gt;
+                    &lt;option value="5"&gt;5&lt;/option&gt;
+                    &lt;option value="6"&gt;6&lt;/option&gt;
+                    &lt;option value="7"&gt;7&lt;/option&gt;
+                &lt;/optgroup&gt;
+            &lt;/select&gt;
+            &lt;label&gt;Mobile number&lt;/label&gt;
+            &lt;input type="number" id="Mobile-no" name="Mobile-no" required&gt;
+            &lt;label&gt;Pass class&lt;/label&gt;
+            &lt;input type="number" id="pass-class" name="pass-class" required&gt;
+            &lt;label&gt; passed year&lt;/label&gt;
+            &lt;input type="date" id="passed-year" name="passed-year" required&gt;
+            &lt;label&gt;Name of School Where you pass&lt;/label&gt;
+            &lt;input type="text" id="Name-of-school-where-pass" name="Name-of-school-where-pass" required&gt;
+            &lt;label&gt;Email&lt;/label&gt;
+            &lt;input type="email" id="email" name="email" required&gt;
+            &lt;label&gt;Photo of Marksheet passed class&lt;/label&gt;
+            &lt;input type="file" src="" id="img" name="img" accept="image/*" required&gt;
+            &lt;label&gt;Hostel&lt;/label&gt;
+            &lt;select name="Hostel" id="Hostel" required&gt;
+                &lt;optgroup&gt;
+                    &lt;option value="yes"&gt;Yes&lt;/option&gt;
+                    &lt;option value="No"&gt;No&lt;/option&gt;
+                &lt;/optgroup&gt;
+            &lt;/select&gt;
+
+            &lt;button&gt;Submit&lt;/button&gt;
+            &lt;button type="Reset"&gt;Reset the form.&lt;/button&gt;
+        &lt;/form&gt;
+    &lt;/div&gt;
+
+
+    &lt;div class="about" id="creator"&gt;
+        &lt;div class="aboutphoto"&gt;
+            &lt;img src="/image/bibhash.jpg" alt="Creator pic"&gt;
+        &lt;/div&gt;
+        &lt;div class="aboutdetail"&gt;
+            &lt;div class="serve"&gt;Creator&lt;/div&gt;
+            Hello my name is Bibhash yadav. I am from Janakpurdham Nepal. I read in class 11 (I am a Technical
+            Students).
+            This is my third website on google. Thanks for watching this website. I just try my website on google. My
+            facebook and instagram link is given below.
+            If you want to chat with me than follow the link given below.&lt;br&gt;
+            Thank you!&lt;br&gt;
+            &lt;a href="https://www.facebook.com/profile.php?id=100057226334759" class="fa fa-facebook"&gt;&lt;/a&gt;
+            &lt;a href="https://wa.me/9808134062" class="fa fa-whatsapp"&gt;&lt;/a&gt;
+            &lt;a href="https://www.instagram.com/bibhash_yadav_a/?fbclid=IwAR3Iva4TjiH61LTZbddjktnk2zhN1rq1bPbr3QfXgwfeDDNm5jQIEkQvROw"
+                class="fa fa-instagram"&gt;&lt;/a&gt;
+            &lt;a href="https://github.com/Bibhash-yadav" class="fa fa-github"&gt;&lt;/a&gt;
+            
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;footer&gt;
+    &lt;h3 class="thanks"&gt;
+        Thanks for watching
+    &lt;/h3&gt;
+    &lt;div class="navbar-foot"&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#home" class="active"&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#teacher"&gt;Teacher&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#gallery"&gt;gallery&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#form"&gt;Form&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#creator"&gt;Creator&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+   
+  &lt;div class="usermessage"&gt;
+    &lt;h2 class="mistake"&gt;
+        if there is any mistake then please say me 
+    &lt;/h2&gt;
+    &lt;form action="https://formspree.io/f/moqbyrga" method="post"&gt;
+    &lt;input type="text" placeholder="message for creator" id="usermessage" name="usermessage"&gt;
+    &lt;button type="submit"&gt;submit&lt;/button&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</div>
+<div class="name">CSS code</div>
+<div class="coding">
+&lt;style&gt;
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fefefe;
+    
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    top: 0;
+    position: sticky;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+.logo img{
+    width: 40%;
+}
+
+.hamburger {
+    display: none;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li a {
+    display: block;
+    color: white;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0px 5px;
+}
+
+.navbar ul li a:hover {
+    color: black;
+    background: white;
+    font-size: 25px;
+}
+
+.navbar ul li a.active {
+    color: black;
+    background: white;
+}
+
+.background {
+    background-image:  url(/image/office.jpg);
+    min-height: 100vh;
+    background-position: center;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    font-family: ubuntu;
+    font-size: 20px;
+}
+.welcome h1 , .name{
+    background-color: #181918e2;
+    padding: 5px;
+    border-radius: 20px;
+    margin-bottom:20px ;
+    color: white;
+    font-size: 30px;
+}
+.mainteacher {
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgb(25, 175, 158);
+    color: white;
+}
+
+.teacher {
+    display: flex;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    justify-content: center;
+}
+
+.headsir {
+    width: 25%;
+    border: 2px solid black;
+    padding-left: 25px;
+    padding-top: 20px;
+    border-radius: 10px;    
+}
+
+.headsir img {
+    width: 90%;
+    border-radius: 30px;
+}
+
+.committee-chairman {
+    width: 25%;
+    border: 2px solid black;
+    padding-left: 25px;
+    padding-top: 20px;
+    border-radius: 10px;
+}
+
+.committee-chairman img {
+    width: 90%;
+    border-radius: 30px;
+}
+
+.information-officer {
+    width: 25%;
+    border: 2px solid black;
+    padding-left: 25px;
+    padding-top: 20px;
+    border-radius: 10px;
+}
+
+.information-officer img {
+    width: 90%;
+    border-radius: 30px;
+}
+
+.nameofsir {
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+}
+
+.gallery {
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgb(8, 121, 242);
+    color: white;
+}
+
+.divid {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 20px;
+   }
+
+.image1 {
+    width: 30%;
+}
+
+.image1 img {
+    width: 90%;
+    border-radius: 30px;
+}
+
+.image2 {
+    width: 30%;
+}
+
+.image2 img {
+    width: 90%;
+    border-radius: 30px;
+}
+
+.image3 {
+    width: 30%;
+}
+
+.image3 img {
+    width: 90%;
+    border-radius: 30px;
+}
+
+.divid2 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.image4 {
+    width: 30%;
+}
+
+.image4 img {
+    width: 90%;
+    border-radius: 30px;
+}
+
+.image5 {
+    width: 30%;
+}
+
+.image5 img {
+    width: 90%;
+    border-radius: 30px;
+}
+
+.image6 {
+    width: 30%;
+}
+
+.image6 img {
+    width: 90%;
+    border-radius: 30px;
+}
+
+.divid3 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.image7 {
+    width: 30%;
+}
+
+.image7 img {
+    width: 90%;
+    border-radius: 30px;
+}
+
+.image8 {
+    width: 30%;
+}
+
+.image8 img {
+    width: 90%;
+    border-radius: 30px;
+}
+
+.image9 {
+    width: 30%;
+}
+
+.image9 img {
+    width: 90%;
+    border-radius: 30px;
+}
+
+.divid4 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.image10 {
+    width: 30%;
+}
+
+.image10 img {
+    width: 90%;
+    border-radius: 30px;
+}
+
+.image11 {
+    width: 30%;
+}
+
+.image11 img {
+    width: 90%;
+    border-radius: 30px;
+}
+
+.image12 {
+    width: 30%;
+}
+
+.image12 img {
+    width: 90%;
+    border-radius: 30px;
+}
+
+
+.Form2 {
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: black;
+    color: white;
+}
+
+.form {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    background: rgb(247,1,11);
+    background: linear-gradient(90deg, rgba(247,1,11,1) 0%, rgba(245,6,63,1) 35%, rgba(255,0,241,1) 100%);
+}
+
+label {
+    justify-content: center;
+    width: 100%;
+    display: flex;
+}
+
+input {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+
+}
+
+select {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid red;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+button {
+    border: 2px solid;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+
+.submit {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    text-decoration-line: underline;
+    text-decoration-color: black;
+    text-decoration-thickness: 3px;
+}
+
+.about {
+    display: flex;
+    width: 100%;
+}
+
+.aboutdetail {
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.serve {
+    font-size: 30px;
+    margin: 30px;
+}
+
+.aboutphoto {
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.aboutphoto img {
+    width: 40%;
+    border-radius: 50px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 70px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: rgb(15, 174, 248);
+    color: white;
+}
+
+.fa-whatsapp {
+    background: rgb(87, 202, 87);
+    color: white;
+}
+
+.fa-instagram {
+    background: red;
+    color: white;
+}
+.fa-github{
+    background: black;
+    color: white;
+}
+i{
+padding: 5px;
+font-size: 16px;
+}
+
+
+footer{
+    display: flex;
+    width: 100%;
+    background: black;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+}
+#usermessage{
+width: 60%;
+padding: 10px;
+}
+.navbar-foot ul li a{
+    display: flex;
+    color: white;
+    width: 45%;
+    padding: 2px;
+}
+.navbar-foot ul li a:hover{
+    font-size: 25px;
+    cursor: pointer;
+
+}
+.thanks{
+    width: 15%;
+}
+
+
+
+@media only screen and (max-width: 1320px) {
+    header {
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    header {
+        padding: 0 30px;
+    }
+
+    .name {
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width: 835px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger .line {
+        width: 30px;
+        height: 5px;
+        background: white;
+        margin: 6px 0px;
+    }
+
+    .hamburger.active .line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .line:nth-child(1) {
+        transform: translateY(15px) rotate(55deg);
+        height: 2px;
+    }
+
+    .hamburger.active .line:nth-child(3) {
+        transform: translateY(-4px) rotate(-55deg);
+        height: 2px;
+    }
+
+    .navbar {
+        height: 0;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        left: 0;
+        width: 100vw;
+        background-color: black;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+
+    .navbar.active {
+        height: 450px;
+    }
+
+    .navbar ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .navbar.active ul {
+        opacity: 1;
+    }
+
+    .navbar ul li a {
+        margin-bottom: 12px;
+    }
+
+    footer{
+        width: 100%;
+        flex-direction: column;
+    }
+    .thanks{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    #usermessage{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    .navbar-foot{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+   .welcome{
+    font-size: 10px;
+   }
+
+    .schoolname {
+        padding-top: 10px;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+
+    .teacher {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .headsir {
+        width: 100%;
+    }
+
+    .committee-chairman {
+        width: 100%;
+    }
+
+    .information-officer {
+        width: 100%;
+    }
+
+    .about {
+        width: 100%;
+        flex-direction: column;
+    }
+
+
+    .aboutphoto {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .aboutphoto img {
+        width: 50%;
+    }
+
+    .aboutdetail {
+        width: 90%;
+        padding: 10px;
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .divid {
+        flex-direction: column;
+        width: 100%;
+        padding: 30px;
+    }
+
+    .image1 {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image1 img {
+        width: 100%;
+        border-radius: 50px;
+    }
+
+    .image2 {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image2 img {
+        width: 100%;
+        border-radius: 50px;
+    }
+
+    .image3 {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image3 img {
+        width: 100%;
+        border-radius: 50px;
+    }
+
+    .divid2 {
+        flex-direction: column;
+        width: 100%;
+        padding: 30px;
+    }
+
+    .image4 {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image4 img {
+        width: 100%;
+        border-radius: 50px;
+    }
+
+    .image5 {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        
+    }
+
+    .image5 img {
+        width: 100%;
+        border-radius: 50px;
+    }
+
+    .image6 {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image6 img {
+        width: 100%;
+        border-radius: 50px;
+    }
+
+    .divid3 {
+        flex-direction: column;
+        width: 100%;
+        padding: 30px;
+    }
+
+    .image7 {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image7 img {
+        width: 100%;
+        border-radius: 50px;
+    }
+
+    .image8 {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image8 img {
+        width: 100%;
+        border-radius: 50px;
+    }
+
+    .image9 {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image9 img {
+        width: 100%;
+        border-radius: 50px;
+    }
+
+    .divid4 {
+        flex-direction: column;
+        width: 100%;
+        padding: 30px;
+    }
+
+    .image10 {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image10 img {
+        width: 100%;
+        border-radius: 50px;
+    }
+
+    .image11 {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image11 img {
+        width: 100%;
+        border-radius: 50px;
+    }
+
+    .image12 {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image12 img {
+        width: 100%;
+        border-radius: 50px;
+    }
+}
+
+
+
+
+/* scrollbar */
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background: #d1e5ff;
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(5,18,238);
+    background: linear-gradient(0deg, rgba(5,18,238,1) 0%, rgba(242,6,15,1) 100%);
+    border-radius: 10px;
+}
+&lt;/style&gt;
+</div>
+<div class="name">JavaScript code</div>
+<div class="coding">
+    &lt;script&gt;
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function () {
+            navBar = document.querySelector(".navbar");
+            navBar.classList.toggle("active");
+            hamburger.classList.toggle("active");
+        }
+    &lt;/script&gt;
+    </div>
+            </pre>
+        </code>
+
+        <div id="code-editor" class="tabcontent">
+            <div class="output">
+                <h3>Html css JavaScript code editor</h3>
+                <button> <a href="/output/code-editor/index.html"> Output</a></button>
+            </div>
+            <code>
+            <pre>
+                <div class="name">Html code</div>
+  &lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+    &lt;link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro-v6@44659d9/css/all.min.css" rel="stylesheet"
+        type="text/css" /&gt;
+    &lt;title&gt;abschool&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;div class="name"&gt;
+        Welcome to abschools
+    &lt;/div&gt;
+&lt;div class="edit"&gt;
+    you can write edit html, css, javascript code.
+&lt;/div&gt;
+
+    &lt;div class="container"&gt;
+        &lt;div class="left"&gt;
+            &lt;label&gt;&lt;i class="fa-sharp fa-solid fa-code"&gt;&lt;/i&gt;HTML&lt;/label&gt;
+            &lt;textarea id="html-code" onkeyup="run()" placeholder="Type html code here"&gt;
+         
+            &lt;/textarea&gt;
+            &lt;/textarea&gt;
+
+            &lt;label&gt;&lt;i class="fa-brands fa-css3"&gt;&lt;/i&gt;CSS&lt;/label&gt;
+            &lt;textarea id="css-code" onkeyup="run()" placeholder="Type css code here"&gt;&lt;/textarea&gt;
+
+            &lt;label&gt;&lt;i class="fa-brands fa-node-js"&gt;&lt;/i&gt;Javascript&lt;/label&gt;
+            &lt;textarea id="js-code" onkeyup="run()" placeholder="Type Javascript code here"&gt;&lt;/textarea&gt;
+        &lt;/div&gt;
+        &lt;div class="right"&gt;
+            &lt;label&gt;&lt;i class="fa-regular fa-play"&gt;&lt;/i&gt;Your Output will show there!
+            &lt;/label&gt;
+            &lt;iframe id="output"&gt;&lt;/iframe&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+
+
+<div class="name">CSS code</div>
+
+&lt;style&gt;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.799);
+    color: white;
+}
+
+.name {
+    display: flex;
+    width: 100%;
+    top: 0;
+    position: sticky;
+    background-color: red;
+    color: white;
+    justify-content: center;
+    font-size: 30px;
+    font-family: ubuntu;
+}
+.edit{
+    display: flex;
+ justify-content: center;
+ font-family:ubuntu;
+ background-color:#ff00ff;
+ font-size: 25px;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.left, .right {
+    flex-basis: 50%;
+    padding: 30px;
+}
+
+textarea {
+    width: 100%;
+    height: 50%;
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+iframe {
+    width: 100%;
+    height: 150vh;
+    background-color: white;
+    color: black;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+}
+
+label {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    background-color: black;
+    border-radius: 20px;
+}
+.show{
+    display: flex;
+    justify-content: center;
+
+}
+
+@media only screen and (max-width: 850px){
+   
+    .container{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+            }
+   textarea{
+    width: 90%;
+    height: 50vh;
+   }
+   .left, .right {
+    flex-basis: 50%;
+    width: 90%;
+    padding: 10px;
+}
+iframe{
+    width: 95%;
+}
+}
+&lt;/style&gt;
+<div class="name">javascript code</div>
+
+&lt;script&gt;
+    function run() {
+        let htmlcode = document.getElementById("html-code").value;
+        let csscode = document.getElementById("css-code").value;
+        let jscode = document.getElementById("js-code").value;
+        let output = document.getElementById("output");
+
+        output.contentDocument.body.innerHTML = htmlcode + "&lt;style&gt;" + csscode + "&lt;/style&gt;";
+        output.contentWindow.eval(jscode);
+    }
+&lt;/script&gt;
+
+&lt;script&gt;
+    function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i &lt; tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i &lt; tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+    document.getElementById("defaultOpen").click();
+&lt;/script&gt;
+            </pre>
+        </code>
+        </div>
+    </div>
+
+    <div id="lumbani" class="tabcontent">
+        <div class="output">
+            <h3>Lumbani</h3>
+            <button> <a href="/output/website/index.html"> Output</a></button>
+        </div>
+        <code>
+            <pre>
+                <div class="name">Html code</div>
+                <div class="coding">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Responsive website&lt;/title&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;div class="logo"&gt;Logo&lt;/div&gt;
+        &lt;div class="hamburger"&gt;
+            &lt;div class="line"&gt;&lt;/div&gt;
+            &lt;div class="line"&gt;&lt;/div&gt;
+            &lt;div class="line"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="navbar"&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Services&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;form&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/header&gt;
+
+    &lt;div class="background"&gt;
+        &lt;div class="big-font"&gt;Hello everyone&lt;/div&gt;
+        &lt;div class="small-font"&gt;I am making simple website.&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;h2&gt;About&lt;/h2&gt;
+    &lt;div class="about"&gt;
+        &lt;div class="detail"&gt;
+            Lumbini is one of the holiest places of one of the world's great religions, and its remains contain
+            important evidence about the nature of Buddhist pilgrimage centres from as early as the 3rd century BC.
+        &lt;/div&gt;
+        &lt;div class="image"&gt;
+            &lt;img src="image.jpg" alt="lumbini"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;h2&gt;Services&lt;/h2&gt;
+    &lt;div class="services"&gt;
+        &lt;div class="services-img"&gt;
+            &lt;img src="services.jpg" alt="services"&gt;
+        &lt;/div&gt;
+        &lt;div class="details"&gt;
+            The Lord Buddha was born in 623 BC in the sacred area of Lumbini located in the Terai plains of southern
+            Nepal, testified by the inscription on the pillar erected by the Mauryan Emperor Asoka in 249 BC. Lumbini is
+            one of the holiest places of one of the world's great religions, and its remains contain important evidence
+            about the nature of Buddhist pilgrimage centres from as early as the 3rd century BC.
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+    &lt;h2&gt;form&lt;/h2&gt;
+    &lt;form action=""&gt;
+        &lt;input type="text" placeholder="Enter your Name.."&gt;
+        &lt;input type="email" placeholder="Enter your Email.."&gt;
+        &lt;textarea name="msg" id="msg" cols="30" rows="10"&gt;&lt;/textarea&gt;
+        &lt;button type="submit"&gt;Submit&lt;/button&gt;
+    &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</div>
+<div class="name">CSS code</div>
+<div class="coding">
+&lt;style&gt;
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    top: 0;
+    position: sticky;
+}
+.logo{
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+.hamburger{
+    display: none;
+}
+.navbar ul{
+    display: flex; 
+    list-style: none;
+}
+.navbar ul li a{
+    display: block;
+    padding: 10px 25px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+.background{
+    display: flex;
+    background-image: url(background.jpg);
+    flex-direction: column;
+    height: 100vh;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+}
+.big-font{
+    font-size: 50px;
+    color: white;
+    padding-bottom: 20px;
+}
+.small-font{
+    font-size: 20px;
+    color: white;
+}
+.about{
+    display: flex;
+    width: 100%;
+
+}
+.detail{
+    width: 50%;
+    padding: 40px;
+    font-size: 30px;
+}
+.image{
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    float: right;
+}
+.image img{
+    border-radius: 50px;
+}
+.services{
+    display: flex;
+    width: 100%;
+}
+.details{
+    width: 50%;
+    font-size: 20px;
+    padding: 30px;
+}
+.services-img{
+    width: 50%;
+    padding: 30px;
+}
+.services-img img{
+    border-radius: 50px;
+}
+form{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+}
+textarea{
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+}
+button{
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: red;
+    font-size: 30px;
+}
+&lt;/style&gt;
+</div>
+            </pre>
+        </code>
+    </div>
+
+    <div id="editor" class="tabcontent">
+        <div class="output">
+            <h3>Live code editor</h3>
+            <button> <a href="/output/code-editor/index.html"> Output</a></button>
+        </div>
+        <code>
+            <pre>
+                <div class="name">Html code</div>
+                <div class="coding">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+    &lt;link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro-v6@44659d9/css/all.min.css" rel="stylesheet"
+        type="text/css" /&gt;
+    &lt;title&gt;abschool&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;div class="name"&gt;
+        Welcome to abcodes
+    &lt;/div&gt;
+
+
+    &lt;div class="container"&gt;
+        &lt;div class="left"&gt;
+            &lt;textarea id="html-code" onkeyup="run()" placeholder="Type html code here"&gt;&lt;/textarea&gt;
+
+            &lt;textarea id="css-code" onkeyup="run()" placeholder="Type css code here"&gt;&lt;/textarea&gt;
+
+            &lt;textarea id="js-code" onkeyup="run()" placeholder="Type Javascript code here"&gt;&lt;/textarea&gt;
+        &lt;/div&gt;
+        &lt;div class="output"&gt;Output&lt;/div&gt;
+        &lt;div class="right"&gt;
+            &lt;iframe id="output"&gt;&lt;/iframe&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+   </div>
+   <div class="name">CSS code</div>
+   <div class="coding">
+    .name{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        background-color:red;
+        color: white;
+        border-radius: 50px;
+        font-family: ubuntu;
+    }
+    .left{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    #html-code,  #css-code, #js-code{
+        display: flex;
+        width: 30%;
+        height: 50vh;
+        margin: 10px;
+        border: 2px solid black;
+    }
+    .right{
+        display: flex;
+        width: 100%;
+        height: 60vh;
+    }
+    #output{
+        width: 100%;
+        border: 2px solid black;
+    }
+    .output{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        background-color: rgb(23, 106, 214);
+        color: white;
+        border-radius: 50px;
+    }
+    @media only screen and (max-width:900px){
+    .left{
+        display: flex;
+        flex-direction: column;
+    }
+    #html-code,  #css-code, #js-code{
+        width: 100%;
+    }
+    }
+    </div>
+    <div class="name">JS code</div>
+    <div class="coding">
+        
+&lt;script&gt;
+function run() {
+    let htmlcode = document.getElementById("html-code").value;
+    let csscode = document.getElementById("css-code").value;
+    let jscode = document.getElementById("js-code").value;
+    let output = document.getElementById("output");
+
+    output.contentDocument.body.innerHTML = htmlcode + "&lt;style&gt;" + csscode + "&lt;/style&gt;";
+    output.contentWindow.eval(jscode);
+}
+&lt;/script&gt;
+        </div>
+   </pre>
+   </code>
+    </div>
+
+
+
+
+
+
+
+</body>
+<script>
+    function opencode(evt, codeName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(codeName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>
+
+<script>
+    hamburger = document.querySelector(".hamburger");
+    hamburger.onclick = function () {
+        navbar = document.querySelector(".tab");
+        navbar.classList.toggle("active");
+        hamburger.classList.toggle("active");
+    }
+</script>
+
+</html>
