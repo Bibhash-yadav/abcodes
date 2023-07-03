@@ -58,7 +58,7 @@ body {
 .tabcontent {
     float: right;
     padding: 10px 12px;
-    width: 82%;
+    width: 80%;
     height: 90vh;
     overflow: auto;
 }
