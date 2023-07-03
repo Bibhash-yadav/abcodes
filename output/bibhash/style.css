@@ -26,11 +26,11 @@ span{
 .hamburger{
     display: none;
 }
-.navlist ul{
+.nav-list ul{
     display: flex;
     list-style-type: none;
 }
-.navlist ul li a{
+.nav-list ul li a{
     display: block;
     color: white;
     font-size: 20px;
@@ -40,10 +40,10 @@ span{
     margin: 0px 2px;
     text-decoration-line: none;
 }
-.navlist ul li a.active{
+.nav-list ul li a.active{
     color: red;
 }
-.navlist ul li a:hover{
+.nav-list ul li a:hover{
     color: red;
 }
 .home{
@@ -70,7 +70,7 @@ span{
 .about{
     display: flex;
     width: 100%;
-    background-color:rgba(0, 0, 0, 0.922) ;
+    background-color:rgba(0, 0, 0, 0.893) ;
 }
 .aboutimg{
     width: 50%;
@@ -92,7 +92,7 @@ span{
     width: 100%;
     align-items: center;
     justify-content: center;
-    background-color:rgba(0, 0, 0, 0.922) ;
+    background-color:rgba(0, 0, 0, 0.712) ;
     /* background: rgb(247,1,11);
     background: linear-gradient(90deg, rgba(247,1,11,1) 0%, rgba(245,6,63,1) 35%, rgba(255,0,241,1) 100%); */
     padding-top: 10px;
@@ -128,4 +128,154 @@ button{
     padding: 10px;
     border-radius: 50px;
     font-size: 15px;
+}
+    
+footer{
+    display: flex;
+    width: 100%;
+    background: black;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+}
+#usermessage{
+width: 60%;
+padding: 10px;
+}
+.navbar-foot ul li a{
+    display: flex;
+    color: white;
+    width: 45%;
+    padding: 2px;
+}
+.navbar-foot ul li a:hover{
+    font-size: 25px;
+    cursor: pointer;
+
+}
+.thanks{
+    width: 15%;
+}
+@media only screen and (max-width: 835px) {
+ 
+    footer{
+        width: 100%;
+        flex-direction: column;
+    }
+    .thanks{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    #usermessage{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    .navbar-foot{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+.hamburger {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.hamburger .line {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+
+.nav-list {
+    height: 0;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background-color: black;
+    transition: 0.2s;
+    overflow: hidden;
+}
+
+.nav-list.active {
+    height: 400px;
+}
+
+.nav-list ul {
+    display: block;
+    width: fit-content;
+    margin: 80px auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.nav-list ul {
+    opacity: 1;
+}
+
+.nav-list ul li a {
+    margin-bottom: 10px;
+}
+
+.hamburger.active .line:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .line:nth-child(1) {
+    transform: translateY(15px) rotate(55deg);
+    height: 2px;
+}
+
+.hamburger.active .line:nth-child(3) {
+    transform: translateY(-4px) rotate(-55deg);
+    height: 2px;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+}
+.introduction{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding-left: 60px;
+    font-size: 25px;
+
+}
+.myphoto{
+    display: flex;
+    width: 100%;
+    flex-direction: column;    
+}
+.myphoto img{
+    padding: 0px;
+    width: 100%;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+}
+.aboutimg{
+    width: 100%;
+    padding-left: 20px;
+}
+.aboutdetails{
+    width: 100%;
+    padding: 10px;
+}
 }

@@ -23,12 +23,14 @@ body {
 
 .tab {
     float: left;
-    border: 1px solid #ccc;
+    border: 5px solid rgb(255, 0, 187);
     background-color: #f1f1f1;
+    border-radius: 10px;
     width: 15%;
     height: 500px;
     cursor: pointer;
     overflow: auto;
+    
 }
 
 .tab button {
@@ -57,7 +59,7 @@ body {
     float: right;
     padding: 10px 12px;
     width: 82%;
-    height: 500px;
+    height: 90vh;
     overflow: auto;
 }
 .coding{
@@ -113,7 +115,7 @@ a{
     padding-top: 10px;
     padding-left: 5px;
     padding-bottom: 10px;
-    border-radius: 40px;
+    border-radius: 15px;
 }
 .hamburger {
     display: none;
@@ -150,7 +152,8 @@ a{
 .tab.active{
     display: inline;
     top: 50px;
-    width: 100%;
+    width: 95%;
+    border: 5px solid black;
     align-items: center;
     justify-content: center;
     color: white;
@@ -181,7 +184,9 @@ a{
     transform: translateY(-4px) rotate(-55deg);
     height: 2px;
 }
-
+.coding{
+    padding: 0px;
+}
 
 }
 
