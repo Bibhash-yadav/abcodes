@@ -1,0 +1,271 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: ubuntu;
+    /* background-color: red; */
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    background-color: black;
+    color: white;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+
+.left {
+    text-align: center;
+    width: 50%;
+
+}
+
+.left ul {
+    text-decoration-style: none;
+    padding-top: 5px;
+}
+
+.left ul li {
+    display: inline;
+    padding: 5px;
+
+}
+
+.left ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.left ul li a:hover {
+    color: red;
+    background-color: white;
+}
+
+.name {
+    margin-top: 5px;
+    font-size: 30px;
+    width: 50%;
+    text-align: center;
+}
+
+
+.about {
+    display: flex;
+    width: 100%;
+}
+
+.aboutdetail {
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.big {
+    font-size: 50px;
+    margin: 20px;
+}
+
+.aboutphoto {
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.aboutphoto img {
+    width: 40%;
+    border-radius: 50px;
+}
+
+.form {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.form input {
+    width: 90%;
+    padding: 5px;
+    margin-top: 20px;
+    border: 2px solid red;
+    border-radius: 10px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn button {
+    margin: 10px;
+    padding: 5px;
+    border-radius: 15px;
+    border: 2px solid red;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+.serve {
+    font-size: 30px;
+    margin: 30px;
+}
+
+.detail {
+    font-size: 30px;
+    margin: 30px;
+}
+
+.register {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: rgb(15, 174, 248);
+    color: white;
+  }
+  .fa-whatsapp {
+    background: rgb(87, 202, 87);
+    color: white;
+  }
+  .fa-instagram {
+    background: red;
+    color: white;
+  }
+  .space{
+    width: 100%;
+  }
+ 
+@media only screen and (max-width: 720px) {
+
+    .hamburger {
+        width: 20%;
+        margin-left: 50px;
+        float: right;
+    }
+
+    .left {
+        display: none;
+        position: absolute;
+        width: 100%;
+        list-style: none;
+        flex-direction: column;
+        font-size: 20px;
+        right: 0;
+        left: 0;
+        text-align: center;
+        margin: 30px 0;
+        color: black;
+        background-color: aquamarine;
+        float: right;
+    }
+
+    .left ul li:hover {
+        color: black;
+        display: inline-block;
+        transition: 0.3s ease;
+        background-color: blue;
+
+    }
+
+    .left li+li {
+        margin-top: 12px;
+    }
+
+    .name {
+        width: 80%;
+    }
+
+    .about {
+        width: 100%;
+        flex-direction: column;
+    }
+
+
+    .aboutphoto {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .aboutphoto img {
+        width: 50%;
+    }
+       .aboutdetail {
+        width: 90%;
+        padding: 5px;
+        flex-direction: column;
+    }
+
+    .form input {
+        width: 80%;
+        padding: 5px;
+        margin-top: 15px;
+    }
+
+    input[type=checkbox]:checked~.left {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+}
+
+@media only screen and (max-width: 498px) {
+
+    .hamburger {
+        width: 20%;
+        float: right;
+    }
+
+    .name {
+        width: 80%;
+        font-size: 15px;
+    }
+
+
+}
+
+@media only screen and (max-width: 248px) {
+
+    .name {
+        width: 80%;
+        font-size: 20px;
+
+    }
+
+    .hamburger {
+        width: 20%;
+        float: right;
+    }
+}

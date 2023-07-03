@@ -35,7 +35,7 @@
         <button class="tablinks" onclick="opencode(event, 'footer')">Footer</button>
         <div class="project">Project works</div>
         <button class="tablinks" onclick="opencode(event, 'School')">School</button>
-        <button class="tablinks" onclick="opencode(event, 'lumbani')">Lumbani</button>
+        <button class="tablinks" onclick="opencode(event, 'abschool')">ab-school</button>
         <button class="tablinks" onclick="opencode(event, 'editor')">Live code editor</button>
         <button class="tablinks" onclick="opencode(event, '')"></button>
     </div>
@@ -2484,10 +2484,10 @@ iframe{
         </div>
     </div>
 
-    <div id="lumbani" class="tabcontent">
+    <div id="abschool" class="tabcontent">
         <div class="output">
-            <h3>Lumbani</h3>
-            <button> <a href="./output/website/index.html"> Output</a></button>
+            <h3>ab-school</h3>
+            <button> <a href="./output/Webpage/index.html"> Output</a></button>
         </div>
         <code>
             <pre>
@@ -2500,186 +2500,380 @@ iframe{
     &lt;meta charset="UTF-8"&gt;
     &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
     &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;title&gt;Responsive website&lt;/title&gt;
+    &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"&gt;
+    &lt;link rel="icon" type="image/x-icon" href="favicon.png"&gt;
     &lt;link rel="stylesheet" href="style.css"&gt;
+    &lt;title&gt;AB Group of Company&lt;/title&gt;
 &lt;/head&gt;
 
 &lt;body&gt;
-    &lt;header&gt;
-        &lt;div class="logo"&gt;Logo&lt;/div&gt;
-        &lt;div class="hamburger"&gt;
-            &lt;div class="line"&gt;&lt;/div&gt;
-            &lt;div class="line"&gt;&lt;/div&gt;
-            &lt;div class="line"&gt;&lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class="navbar"&gt;
+    &lt;div class="navbar" id="navbar"&gt;
+        &lt;div class="name"&gt;ab group of company&lt;/div&gt;
+        &lt;input type="checkbox" id="checkbox-toggle"&gt;
+        &lt;label for="checkbox-toggle" class="hamburger"&gt;&#9776;&lt;/label&gt;
+        &lt;div class="left" id="mytopnav"&gt;
             &lt;ul&gt;
-                &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href="#"&gt;Services&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href="#"&gt;form&lt;/a&gt;&lt;/li&gt;
+
+                &lt;li&gt; &lt;a href="#home"&gt;home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt; &lt;a href="#about"&gt;about&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt; &lt;a href="#services"&gt;services&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt; &lt;a href="#login"&gt;login&lt;/a&gt;&lt;/li&gt;
             &lt;/ul&gt;
         &lt;/div&gt;
-    &lt;/header&gt;
 
-    &lt;div class="background"&gt;
-        &lt;div class="big-font"&gt;Hello everyone&lt;/div&gt;
-        &lt;div class="small-font"&gt;I am making simple website.&lt;/div&gt;
+
     &lt;/div&gt;
-    &lt;h2&gt;About&lt;/h2&gt;
+    &lt;div class="space" id="home"&gt;&lt;/div&gt;
     &lt;div class="about"&gt;
-        &lt;div class="detail"&gt;
-            Lumbini is one of the holiest places of one of the world's great religions, and its remains contain
-            important evidence about the nature of Buddhist pilgrimage centres from as early as the 3rd century BC.
+        &lt;div class="aboutdetail"&gt;
+            &lt;div class="big"&gt; the future of life is here.&lt;/div&gt;
+            ...many people are woring in my company and AB group of Company are one of them in all Company. ...many people are
+            woring in my company and AB group of Company are one of them in all Company. ...many people are woring in my
+            company and AB group of Company are one of them in all Company.
         &lt;/div&gt;
-        &lt;div class="image"&gt;
-            &lt;img src="image.jpg" alt="lumbini"&gt;
+        &lt;div class="aboutphoto"&gt;
+            &lt;img src="bg.png" alt="Company image"&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-    &lt;h2&gt;Services&lt;/h2&gt;
-    &lt;div class="services"&gt;
-        &lt;div class="services-img"&gt;
-            &lt;img src="services.jpg" alt="services"&gt;
-        &lt;/div&gt;
-        &lt;div class="details"&gt;
-            The Lord Buddha was born in 623 BC in the sacred area of Lumbini located in the Terai plains of southern
-            Nepal, testified by the inscription on the pillar erected by the Mauryan Emperor Asoka in 249 BC. Lumbini is
-            one of the holiest places of one of the world's great religions, and its remains contain important evidence
-            about the nature of Buddhist pilgrimage centres from as early as the 3rd century BC.
+    &lt;div id="about"&gt;&lt;/div&gt;
+    &lt;div class="about"&gt;
+        &lt;div class="aboutphoto"&gt;
+            &lt;img src="subhash.jpg" alt="Owner picture"&gt;
         &lt;/div&gt;
 
+        &lt;div class="aboutdetail"&gt;
+            &lt;div class="detail"&gt;About&lt;/div&gt;
+            I want to say about this company. The owner of this company is Subhash Yadav. It was established in 2078
+            B.S. It is located Janakpur. There are 300 of worker are work. The CEO of this company is Subhash yadav. The
+            manager of this company is Manish yadav. There are 300 computer. This company was establish for programming
+            app or web page. Computer are very fast in networking. There are coffee center behind the company. There are
+            two hours rest time. There are one five days works and two days holiday.
+        &lt;/div&gt;
     &lt;/div&gt;
-    &lt;h2&gt;form&lt;/h2&gt;
-    &lt;form action=""&gt;
-        &lt;input type="text" placeholder="Enter your Name.."&gt;
-        &lt;input type="email" placeholder="Enter your Email.."&gt;
-        &lt;textarea name="msg" id="msg" cols="30" rows="10"&gt;&lt;/textarea&gt;
-        &lt;button type="submit"&gt;Submit&lt;/button&gt;
-    &lt;/form&gt;
+    &lt;div id="services"&gt;&lt;/div&gt;
+    &lt;div class="about"&gt;
+
+        &lt;div class="aboutdetail"&gt;
+            &lt;div class="serve"&gt;Services&lt;/div&gt;
+
+            The services of these company are:-
+            There are 2% profit is divided in all workers. There are Different type of app and game for enjoy.
+        &lt;/div&gt;
+        &lt;div class="aboutphoto"&gt;
+            &lt;img src="services.jpg" alt="Services pic"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div id="login"&gt;&lt;/div&gt;
+    &lt;div class="register"&gt;Please full fill the form!&lt;/div&gt;
+    &lt;div class="form"&gt;
+        &lt;form action="https://formspree.io/f/moqbyrga" method="POST"&gt;
+            &lt;input type="text" name="name" placeholder="Enter your full name...."&gt;
+            &lt;input type="text" name="Address" placeholder="Enter your address...."&gt;
+            &lt;input type="number" name="number" placeholder="Enter your mobile number...."&gt;
+            &lt;input type="email" name="email" placeholder="Enter your Email..."&gt;
+            &lt;input type="password" name="password" placeholder="Enter your Password..."&gt;&lt;br&gt;
+            &lt;div class="btn"&gt;
+                &lt;button type="submit"&gt;submit&lt;/button&gt;
+                &lt;button type="reset"&gt;reset&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/form&gt;
+    &lt;/div&gt;
+
+    &lt;div class="about"&gt;
+        &lt;div class="aboutphoto"&gt;
+            &lt;img src="bibhash.jpg" alt="Creator pic"&gt;
+        &lt;/div&gt;
+        &lt;div class="aboutdetail"&gt;
+            &lt;div class="serve"&gt;Creator&lt;/div&gt;
+            Hello my name is Bibhash yadav. I am from Janakpurdham Nepal. I read in class 11 (I am a Technical
+            Students).
+            This is my first website on google. Thanks for watching this website.I am sorry to say that This is not a
+            real company i just try my new website on google. My facebook and instagram link is given below.
+            If you want to chat with me than follow the link given below.&lt;br&gt;
+            Thank you!&lt;br&gt;
+            &lt;a href="https://www.facebook.com/profile.php?id=100057226334759" class="fa fa-facebook"&gt;&lt;/a&gt;
+            &lt;a href="https://wa.me/9808134062" class="fa fa-whatsapp"&gt;&lt;/a&gt;
+            &lt;a href="https://www.instagram.com/bibhash_yadav_a/?fbclid=IwAR3Iva4TjiH61LTZbddjktnk2zhN1rq1bPbr3QfXgwfeDDNm5jQIEkQvROw"
+                class="fa fa-instagram"&gt;&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
 &lt;/body&gt;
+                    
 &lt;/html&gt;
 </div>
 <div class="name">CSS code</div>
 <div class="coding">
 &lt;style&gt;
-*{
-    margin: 0;
+* {
     padding: 0;
+    margin: 0;
+    font-family: ubuntu;
+    /* background-color: red; */
 }
-header{
+
+.navbar {
     display: flex;
     width: 100%;
-    height: 80px;
     background-color: black;
-    align-items: center;
-    justify-content: space-between;
     color: white;
-    top: 0;
     position: sticky;
+    top: 0;
+    cursor: pointer;
 }
-.logo{
-    font-size: 25px;
-    font-weight: bold;
-    padding-left: 20px;
-}
-.hamburger{
-    display: none;
-}
-.navbar ul{
-    display: flex; 
-    list-style: none;
-}
-.navbar ul li a{
-    display: block;
-    padding: 10px 25px;
-    font-size: 20px;
-    color: white;
-    text-decoration: none;
-}
-.background{
-    display: flex;
-    background-image: url(background.jpg);
-    flex-direction: column;
-    height: 100vh;
-    background-position: center;
-    align-items: center;
-    justify-content: center;
-}
-.big-font{
-    font-size: 50px;
-    color: white;
-    padding-bottom: 20px;
-}
-.small-font{
-    font-size: 20px;
-    color: white;
-}
-.about{
-    display: flex;
-    width: 100%;
+
+.left {
+    text-align: center;
+    width: 50%;
 
 }
-.detail{
-    width: 50%;
-    padding: 40px;
-    font-size: 30px;
+
+.left ul {
+    text-decoration-style: none;
+    padding-top: 5px;
 }
-.image{
-    width: 50%;
-    padding: 40px;
-    display: flex;
-    float: right;
+
+.left ul li {
+    display: inline;
+    padding: 5px;
+
 }
-.image img{
-    border-radius: 50px;
-}
-.services{
-    display: flex;
-    width: 100%;
-}
-.details{
-    width: 50%;
+
+.left ul li a {
+    text-decoration: none;
+    color: white;
     font-size: 20px;
-    padding: 30px;
 }
-.services-img{
+
+.left ul li a:hover {
+    color: red;
+    background-color: white;
+}
+
+.name {
+    margin-top: 5px;
+    font-size: 30px;
     width: 50%;
-    padding: 30px;
+    text-align: center;
 }
-.services-img img{
-    border-radius: 50px;
-}
-form{
+
+
+.about {
     display: flex;
     width: 100%;
-    flex-direction: column;
-    align-items: center;
+}
+
+.aboutdetail {
+    width: 50%;
+    text-align: center;
     justify-content: center;
+    padding: 50px;
 }
-input{
-    width: 80%;
-    padding: 10px;
-    margin: 10px;
-    border: 2px solid black;
+
+.big {
+    font-size: 50px;
+    margin: 20px;
 }
-textarea{
-    width: 80%;
-    padding: 10px;
-    margin: 10px;
-    border: 2px solid black;
+
+.aboutphoto {
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    margin-top: 40px;
 }
-button{
-    border: 2px solid black;
-    padding: 10px;
-    margin: 10px;
+
+.aboutphoto img {
+    width: 40%;
+    border-radius: 50px;
 }
-h2{
+
+.form {
     display: flex;
-    align-items: center;
+    width: 100%;
+    text-align: center;
     justify-content: center;
-    padding: 10px;
-    color: red;
+    margin-top: 15px;
+}
+
+.form input {
+    width: 90%;
+    padding: 5px;
+    margin-top: 20px;
+    border: 2px solid red;
+    border-radius: 10px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn button {
+    margin: 10px;
+    padding: 5px;
+    border-radius: 15px;
+    border: 2px solid red;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+.serve {
     font-size: 30px;
+    margin: 30px;
+}
+
+.detail {
+    font-size: 30px;
+    margin: 30px;
+}
+
+.register {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: rgb(15, 174, 248);
+    color: white;
+  }
+  .fa-whatsapp {
+    background: rgb(87, 202, 87);
+    color: white;
+  }
+  .fa-instagram {
+    background: red;
+    color: white;
+  }
+  .space{
+    width: 100%;
+  }
+ 
+@media only screen and (max-width: 720px) {
+
+    .hamburger {
+        width: 20%;
+        margin-left: 50px;
+        float: right;
+    }
+
+    .left {
+        display: none;
+        position: absolute;
+        width: 100%;
+        list-style: none;
+        flex-direction: column;
+        font-size: 20px;
+        right: 0;
+        left: 0;
+        text-align: center;
+        margin: 30px 0;
+        color: black;
+        background-color: aquamarine;
+        float: right;
+    }
+
+    .left ul li:hover {
+        color: black;
+        display: inline-block;
+        transition: 0.3s ease;
+        background-color: blue;
+
+    }
+
+    .left li+li {
+        margin-top: 12px;
+    }
+
+    .name {
+        width: 80%;
+    }
+
+    .about {
+        width: 100%;
+        flex-direction: column;
+    }
+
+
+    .aboutphoto {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .aboutphoto img {
+        width: 50%;
+    }
+       .aboutdetail {
+        width: 90%;
+        padding: 5px;
+        flex-direction: column;
+    }
+
+    .form input {
+        width: 80%;
+        padding: 5px;
+        margin-top: 15px;
+    }
+
+    input[type=checkbox]:checked~.left {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+}
+
+@media only screen and (max-width: 498px) {
+
+    .hamburger {
+        width: 20%;
+        float: right;
+    }
+
+    .name {
+        width: 80%;
+        font-size: 15px;
+    }
+
+
+}
+
+@media only screen and (max-width: 248px) {
+
+    .name {
+        width: 80%;
+        font-size: 20px;
+
+    }
+
+    .hamburger {
+        width: 20%;
+        float: right;
+    }
 }
 &lt;/style&gt;
 </div>
